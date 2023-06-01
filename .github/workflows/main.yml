@@ -24,7 +24,7 @@ jobs:
       fail-fast: false
       matrix:
          go: [1.11, 1.12, 1.13, 1.14, 1.15]
-         flag: [A, B, C, D]
+         flag: [A, B]
  
     timeout-minutes: 58
     steps:
@@ -33,5 +33,5 @@ jobs:
       continue-on-error: true
       run: |
         echo 'hello'
-        sleep 120
+        sleep 60
         echo 'done'
