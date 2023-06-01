@@ -10,7 +10,7 @@ jobs:
       fail-fast: false
       matrix:
          go: [1.11, 1.12, 1.13, 1.14, 1.15]
-         flag: [A, B. C , D]
+         flag: [A, B. C, D]
  
     steps:
     - uses: actions/checkout@v3
@@ -32,6 +32,6 @@ jobs:
     - name: Oke-Build1
       continue-on-error: true
       run: |
-        echo 'hello'
+        echo 'hellos'
         sleep 60
         echo 'done'
